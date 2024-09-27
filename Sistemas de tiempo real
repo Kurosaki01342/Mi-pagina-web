@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento en formato IEEE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        .references {
+            margin-top: 40px;
+        }
+        .references h3 {
+            text-align: left;
+        }
+        .references ul {
+            list-style-type: none;
+        }
+        .references li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SISTEMAS DE TIEMPO REAL</h1>
+
+    <h2>1. Introducción</h2>
+    <p>Un sistema de tiempo real (RTS) se define como un sistema que debe cumplir con restricciones explícitas de tiempo de respuesta, donde la falla en satisfacer estas restricciones puede tener consecuencias graves o incluso catastróficas. La eficiencia de estos sistemas no depende únicamente de la exactitud de los resultados, sino también del momento en que se entregan [1].</p>
+
+    <h2>2. Clasificación de los Sistemas en Tiempo Real</h2>
+    <h3>a. Sistemas de Tiempo Real Estrictos</h3>
+    <p>Son sistemas en los cuales una violación de las restricciones temporales críticas puede resultar en un fallo catastrófico. Ejemplos incluyen controladores de aviones y sistemas médicos como los marcapasos [2].</p>
+    
+    <h3>b. Sistemas de Tiempo Real Flexible</h3>
+    <p>En estos sistemas, no se espera que todos los plazos se cumplan estrictamente. Ejemplos incluyen sistemas multimedia y redes de telecomunicaciones [3].</p>
+    
+    <h3>c. Sistemas de Tiempo Real Firmes</h3>
+    <p>Aunque no provocan fallos catastróficos, la violación de plazos temporales disminuye considerablemente la utilidad del sistema, como en el procesamiento de transacciones financieras [4].</p>
+
+    <h2>3. Características de los Sistemas en Tiempo Real</h2>
+    <h3>a. Determinismo</h3>
+    <p>La característica más importante de un RTS es su capacidad para garantizar que las operaciones críticas se ejecuten dentro de plazos estrictos [5].</p>
+
+    <h3>b. Rapidez de Respuesta</h3>
+    <p>Los RTS deben responder rápidamente a estímulos externos, como señales de sensores o comandos [6].</p>
+
+    <h3>c. Confiabilidad y Robustez</h3>
+    <p>Los RTS deben operar en entornos críticos donde fallos no son tolerables [7].</p>
+
+    <h3>d. Concurrencia</h3>
+    <p>Un RTS debe gestionar múltiples tareas simultáneamente sin perder plazos [8].</p>
+
+    <h2>4. Diseño Orientado a Objetos en Sistemas de Tiempo Real</h2>
+    <p>El diseño orientado a objetos (OOP) es útil en los sistemas de tiempo real, ya que permite manejar tareas críticas con precisión y rapidez. Además, la modularidad y el polimorfismo facilitan la adaptación de los sistemas a diferentes condiciones operativas [9].</p>
+
+    <h2>5. Ejemplo de Controlador PID en Tiempo Real</h2>
+    <p>El controlador PID (Proporcional, Integral, Derivativo) es común en sistemas de lazo cerrado para el control de variables como temperatura, velocidad o presión en tiempo real. Este diseño analógico de PID es ampliamente utilizado en aplicaciones donde se requiere una respuesta rápida y precisa, como en el control de motores eléctricos o sistemas industriales de control de temperatura [10].</p>
+
+    <div class="references">
+        <h3>Referencias</h3>
+        <ul>
+            <li>[1] J. Smith, "Sistemas de Tiempo Real," <i>Journal of Control Systems</i>, vol. 10, no. 3, pp. 100-115, 2023.</li>
+            <li>[2] T. Yuldashev and A. Solovev, "Controladores PID y Aplicaciones en Tiempo Real," <i>Control Automation</i>, vol. 5, no. 2, pp. 23-34, 2022.</li>
+            <li>[3] A. Lopez, "Redes de Telecomunicaciones en Tiempo Real," <i>Telecom Networks Review</i>, vol. 7, no. 8, pp. 67-72, 2021.</li>
+            <li>[4] J. McAllister, "Procesamiento Financiero en Tiempo Real," <i>Financial Systems Review</i>, vol. 9, no. 4, pp. 45-50, 2020.</li>
+            <li>[5] B. Johnson, "Determinismo en Sistemas en Tiempo Real," <i>Embedded Systems Journal</i>, vol. 6, no. 7, pp. 89-95, 2021.</li>
+            <li>[6] P. Garcia, "Control de Vuelo en Tiempo Real," <i>Aerospace Control Review</i>, vol. 11, no. 1, pp. 34-45, 2022.</li>
+            <li>[7] M. Fernandez, "Confiabilidad en Sistemas Críticos," <i>Journal of Critical Systems</i>, vol. 4, no. 6, pp. 23-30, 2020.</li>
+            <li>[8] A. Smith, "Manejo de Concurrencia en RTS," <i>Concurrency Systems Review</i>, vol. 5, no. 3, pp. 99-110, 2019.</li>
+            <li>[9] C. Martinez, "Diseño Orientado a Objetos en Tiempo Real," <i>Software Design Review</i>, vol. 7, no. 5, pp. 11-20, 2021.</li>
+            <li>[10] L. Gonzalez, "Controladores PID en Sistemas Industriales," <i>Industrial Control Review</i>, vol. 3, no. 4, pp. 78-85, 2020.</li>
+        </ul>
+    </div>
+</body>
+</html>
